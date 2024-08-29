@@ -21,20 +21,20 @@ armor_class: "17 (natural armor)"
 
 ***Amphibious.*** The hag can breathe air and water.
 
-***Innate Spellcasting.*** The hag's innate spellcasting ability is Charisma (spell save DC 12). She can innately cast the following spells, requiring no material components:
-
-1st level: four spell slots.
+***Innate Spellcasting.*** The hag's innate spellcasting ability is Charisma (spell save DC 12). She has four 1st spell slots.
 
 ***Mimicry.*** The hag can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations with a successful DC 14 Wisdom (Insight) check.
 
 
 ### Actions
 
-***Staff of Crones.*** While holding this staff, they can cast (ray of sickness)[https://dnd5e.wikidot.com/spell:ray-of-sickness] as a 1st level spell.
+***Staff of Crones.*** While holding this staff, they can cast [ray of sickness](https://dnd5e.wikidot.com/spell:ray-of-sickness) as a 1st level spell.
 
-***Rose Amulet of Sleep.*** While wearing this amulet, they can cast (sleep)[https://www.dndbeyond.com/spells/2254-sleep] as a 1st level spell.
+***Rose Amulet of Sleep.*** While wearing this amulet, they can cast [sleep](https://www.dndbeyond.com/spells/2254-sleep) as a 1st level spell.
 
-***Vicious Mockery.*** WThey can cast (vicious mockery)[https://roll20.net/compendium/dnd5e/Vicious%20Mockery#content] at will.
+***Vicious Mockery.*** They can cast [vicious mockery](https://roll20.net/compendium/dnd5e/Vicious%20Mockery#content) at will.
+
+***Hold Person.*** They can cast [Hold Person](https://dnd5e.wikidot.com/spell:hold-person) as a 2nd level spell.
 
 
 ***Claws.*** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.
