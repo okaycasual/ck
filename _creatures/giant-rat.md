@@ -13,7 +13,7 @@ alignment: unaligned
 challenge: "1/8 (25 XP)"
 senses: "darkvision 60 ft."
 speed: "30 ft."
-hit_points: "7 (2d6)"
+hit_points: "10"
 armor_class: "12"
 ---
 

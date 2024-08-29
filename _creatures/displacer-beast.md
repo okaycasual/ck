@@ -13,7 +13,7 @@ alignment: lawful evil
 challenge: "3 (700 XP)"
 senses: "darkvision 60 ft."
 speed: "40 ft."
-hit_points: "85 (10d10+30)"
+hit_points: "85"
 armor_class: "13 (natural armor)"
 ---
 
