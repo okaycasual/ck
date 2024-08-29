@@ -1,9 +1,8 @@
 ---
 layout: item
 name: "Dagger of Haunting"
-category: "Items"
-damage: "1d4"
-damage_type: "Piercing"
+item_type: "melee weapon (simple, dagger)"
+damage: "1d4 piercing"
 item_rarity: "Rare"
 modifiers: "Weapon Attacks +1"
 properties: "Finesse, Light, Range, Thrown"
