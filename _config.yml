@@ -1,14 +1,20 @@
-title: "Bestiary"
-author: "chisaipete"
+title: "Compendium"
+author: "okaycasual"
 description: "A searchable D&D 5e creature list."
-url: "https://chisaipete.github.io"
-source-url: "https://github.com/chisaipete/bestiary"
-baseurl: "/bestiary"
+url: "https://okaycasual.github.io"
+source-url: "https://github.com/okaycasual/ck"
+baseurl: "/ck"
 exclude: ['Rakefile', 'README.md']
 collections:
   creatures:
     output: true
     permalink: "/creature/:name"
+  items:
+    output: true
+    permalink: "/item/:name"
+  companions:
+    output: true
+    permalink: "/companion/:name"
   tags:
     output: true
     permalink: "/tag/:name"
