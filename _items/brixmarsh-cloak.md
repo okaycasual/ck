@@ -1,6 +1,6 @@
 ---
 layout: item
-name: "Dagger of Haunting"
+name: "Brixmarsh Cloak"
 item_type: "wondrous item"
 item_rarity: "Uncommon"
 weight: "1"
