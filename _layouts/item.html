@@ -12,34 +12,41 @@ layout: default
       <svg height="5" width="100%" class="tapered-rule">
 	<polyline points="0,0 400,2.5 0,5"></polyline>
       </svg>
+
+
       <div class="top-stats">
 		<div class="property-line first">
 		<h4>Rarity</h4>
 		<p>{{ page.item_rarity }}</p>
-		</div> <!-- property line -->
+	</div> 
+	{% if page.damage %}
 	<div class="property-line first">
 	  <h4>Damage</h4>
 	  <p>{{ page.damage }}</p>
-	</div> <!-- property line -->
+	</div> 
+	{% endif %}
+	{% if page.modifiers %}
 	<div class="property-line">
 	  <h4>Modifiers</h4>
 	  <p contenteditable="true">{{ page.modifiers }}</p>
-	</div> <!-- property line -->
+	</div>
+	{% endif %}
+	{% if page.properties %}
 	<div class="property-line last">
 	  <h4>Properties</h4>
 	  <p>{{ page.properties }}</p>
-	</div> <!-- property line -->
+	</div> 
+	{% endif %}
+	{% if page.range %}
 	<div class="property-line last">
 	<h4>Range</h4>
 	<p>{{ page.range }}</p>
-	</div> <!-- property line -->
+	</div> 
+	{% endif %}
 	  <div class="property-line last">
 		<h4>Weight</h4>
 		<p>{{ page.weight }}</p>
-	  </div> <!-- property line -->
-	<svg height="5" width="100%" class="tapered-rule">
-	  <polyline points="0,0 400,2.5 0,5"></polyline>
-	</svg>
+	  </div> 
 	<svg height="5" width="100%" class="tapered-rule top-gap">
 	  <polyline points="0,0 400,2.5 0,5"></polyline>
 	</svg>
