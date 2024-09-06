@@ -35,7 +35,7 @@ armor_class: "17 (natural armor)"
 * [Hold Person](https://dnd5e.wikidot.com/spell:hold-person) as a 2nd level spell.
 * [Invisibility](https://roll20.net/compendium/dnd5e/Invisibility#content) as a 2nd level spell.
 
-***Claws.*** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.
+***Claws.*** Melee Weapon Attack: [+6 to hit](/r 1d20+6), reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.
 
 ***Illusory Appearance.*** The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like another creature of her general size and humanoid shape. The illusion ends if the hag takes a bonus action to end it or if she dies.
 
