@@ -1,5 +1,5 @@
 ---
-layout: creature
+layout: monster
 name: "Green Hag"
 tags: [medium, fey, cr3, monster-manual]
 cha: 14 (+2)

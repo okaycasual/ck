@@ -8,14 +8,14 @@
 </dl>
 {% for cr in cr-tags %}
   {% assign tag = "cr" | append: cr %}
-  {% assign creatures = all_creatures | where: 'tags', tag %}
-  {% if creatures.size > 0 %}
+  {% assign monsters = all_monsters | where: 'tags', tag %}
+  {% if monsters.size > 0 %}
     <a id="{{ tag }}"></a>
     <h2 class="post-list-head jetsHide">Challenge {{ cr }}</h2>
     <ul class="post-list jetsContent">
-      {% for creature in creatures | sort: 'name %}
+      {% for monster in monsters | sort: 'name %}
         <li>
-          <a class="post-link" href="{{ creature.url | prepend: site.baseurl }}">{{ creature.name }}</a>
+          <a class="post-link" href="{{ monster.url | prepend: site.baseurl }}">{{ monster.name }}</a>
         </li>
       {% endfor %}
     </ul>

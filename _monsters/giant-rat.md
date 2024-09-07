@@ -1,5 +1,5 @@
 ---
-layout: creature
+layout: monster
 name: "Giant Rat"
 tags: [small, beast, cr1/8, monster-manual]
 cha: 4 (-3)

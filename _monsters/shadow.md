@@ -1,5 +1,5 @@
 ---
-layout: creature
+layout: monster
 name: "Shadow"
 tags: [medium, undead, cr1/2, monster-manual]
 cha: 8 (-1)

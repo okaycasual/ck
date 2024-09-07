@@ -2,10 +2,10 @@
 layout: default
 ---
 {% assign letters = "D G S" | split: ' ' %}
-{% assign all_creatures = site.creatures | sort: 'name' %}
+{% assign all_monsters = site.monsters | sort: 'name' %}
 <div class="home">
-  <h1 class="page-heading">All Creatures</h1>
-  <p id="creatureSearch">Search by name: <input type="search" id="jetsSearch"></p>
+  <h1 class="page-heading">All Monsters</h1>
+  <p id="monsterSearch">Search by name: <input type="search" id="jetsSearch"></p>
   <p id="sortBy">Sort By: <a href="{{ site.baseurl }}/cr">CR</a> | <a href="{{ site.baseurl }}/">Name</a></p>
 
   <dl class="tag-list">
@@ -20,11 +20,11 @@ layout: default
   <a id="{{ letter }}"></a>
   <h2 class="post-list-head jetsHide">{{ letter }}</h2>
   <ul class="post-list jetsContent">
-    {% for creature in all_creatures %}
-    {% assign l = creature.name | slice: 0 %}
+    {% for monster in all_monsters %}
+    {% assign l = monster.name | slice: 0 %}
     {% if l != letter %}{% continue %}{% endif %}
     <li>
-      <a class="post-link" href="{{ creature.url | prepend: site.baseurl }}">{{ creature.name }}</a>
+      <a class="post-link" href="{{ monster.url | prepend: site.baseurl }}">{{ monster.name }}</a>
     </li>
     {% endfor %}
   </ul>

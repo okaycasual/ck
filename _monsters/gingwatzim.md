@@ -1,5 +1,5 @@
 ---
-layout: creature
+layout: monster
 name: "Gingwatzim"
 tags: [small, aberration, shapechanger]
 cha: 6 (-2)

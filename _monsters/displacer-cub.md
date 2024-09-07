@@ -1,5 +1,5 @@
 ---
-layout: creature
+layout: monster
 name: "Displacer Cub"
 tags: [small, monstrosity, cr3, monster-manual]
 cha: 8 (-1)

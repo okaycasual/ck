@@ -1,14 +1,14 @@
 title: "Compendium"
 author: "okaycasual"
-description: "A searchable D&D 5e creature list."
+description: "A searchable D&D 5e lists."
 url: "https://okaycasual.github.io"
 source-url: "https://github.com/okaycasual/ck"
 baseurl: "/ck"
 exclude: ['Rakefile', 'README.md']
 collections:
-  creatures:
+  monsters:
     output: true
-    permalink: "/creature/:name"
+    permalink: "/monsters/:name"
   items:
     output: true
     permalink: "/item/:name"

@@ -1,14 +1,14 @@
 ---
-layout: creature
+layout: monster
 name: ""
-tags: [size, creaturetype, crXX, tome-of-horrors]
+tags: [size, monstertype, crXX, tome-of-horrors]
 cha: 10 (+0)
 wis: 10 (+0)
 int: 10 (+0)
 con: 10 (+0)
 dex: 10 (+0)
 str: 10 (+0)
-size: Size creaturetype
+size: Size monsterType
 alignment:
 challenge: "XX (YY XP)"
 languages: ""
