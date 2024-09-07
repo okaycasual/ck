@@ -2,19 +2,26 @@
 layout: monster
 name: "Displacer Beast"
 tags: [large, monstrosity, cr3, monster-manual]
-cha: 8 (-1)
-wis: 12 (+1)
-int: 6 (-2)
-con: 16 (+3)
-dex: 15 (+2)
-str: 18 (+4)
+cha: 8 
+cha_mod: (-1)
+wis: 12 
+wis_mod: (+1)
+int: 6 
+int_mod: (-2)
+con: 16 
+con_mod: (+3)
+dex: 15 
+dex_mod: (+2)
+str: 18 
+str_mod: (+4)
 size: Large monstrosity
 alignment: lawful evil
 challenge: "3 (700 XP)"
 senses: "darkvision 60 ft."
 speed: "40 ft."
 hit_points: "85"
-armor_class: "13 (natural armor)"
+hit_points_roll: "(2d8 + 2)"
+armor_class: 13 (natural armor)
 ---
 
 ***Avoidance.*** If the displacer beast is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails .

@@ -152,23 +152,23 @@ layout: default
             <span class="mon-stat-block__attribute-label">Armor Class</span>
             <span class="mon-stat-block__attribute-value">
                 <span class="mon-stat-block__attribute-data-value">
-                    13
+                  <p>{{ page.armor_class }}</p>
                 </span>
-                
-                    <span class="mon-stat-block__attribute-data-extra">
-                        (natural armor)  
-                    </span> 
-                         
+                {% if page.armor_type %}
+                  <span class="mon-stat-block__attribute-data-extra">
+                    <p>{{ page.armor_type }}</p>
+                  </span> 
+                {% endif %}
             </span>
         </div>
         <div class="mon-stat-block__attribute">
             <span class="mon-stat-block__attribute-label">Hit Points</span>
             <span class="mon-stat-block__attribute-data">
-                <span class="mon-stat-block__attribute-data-value">
-                    11
+                <span class="mon-stat-block__attribute-data-value" contenteditable="true">
+                  {{ page.hit_points }}
                 </span>
                 <span class="mon-stat-block__attribute-data-extra">
-                    (2d8 + 2)
+                  {{ page.hit_points_roll }}
                 </span>      
             </span>
         </div>
@@ -176,7 +176,7 @@ layout: default
             <span class="mon-stat-block__attribute-label">Speed</span>
             <span class="mon-stat-block__attribute-data">
                 <span class="mon-stat-block__attribute-data-value">
-                    40 ft. 
+                  {{ page.speed }}
                 </span>
             </span>
         </div>
@@ -189,43 +189,43 @@ layout: default
             <div class="ability-block__stat ability-block__stat--str">
                 <div class="ability-block__heading">STR</div>
                 <div class="ability-block__data">
-                    <span class="ability-block__score">12</span>
-                    <span class="ability-block__modifier">(+1)</span>
+                    <span class="ability-block__score">{{ page.str }}</span>
+                    <span class="ability-block__modifier">{{ page.str_mod }}</span>
                 </div>
             </div>
             <div class="ability-block__stat ability-block__stat--dex">
                 <div class="ability-block__heading">DEX</div>
                 <div class="ability-block__data">
-                    <span class="ability-block__score">15</span>
-                    <span class="ability-block__modifier">(+2)</span>
+                    <span class="ability-block__score">{{ page.dex }}</span>
+                    <span class="ability-block__modifier">{{ page.dex_mod }}</span>
                 </div>
             </div>
             <div class="ability-block__stat ability-block__stat--con">
                 <div class="ability-block__heading">CON</div>
                 <div class="ability-block__data">
-                    <span class="ability-block__score">12</span>
-                    <span class="ability-block__modifier">(+1)</span>
+                    <span class="ability-block__score">{{ page.con }}</span>
+                    <span class="ability-block__modifier">{{ page.con_mod }}</span>
                 </div>
             </div>
             <div class="ability-block__stat ability-block__stat--int">
                 <div class="ability-block__heading">INT</div>
                 <div class="ability-block__data">
-                    <span class="ability-block__score">3</span>
-                    <span class="ability-block__modifier">(-4)</span>
+                    <span class="ability-block__score">{{ page.int }}</span>
+                    <span class="ability-block__modifier">{{ page.int_mod }}</span>
                 </div>
             </div>
             <div class="ability-block__stat ability-block__stat--wis">
                 <div class="ability-block__heading">WIS</div>
                 <div class="ability-block__data">
-                    <span class="ability-block__score">12</span>
-                    <span class="ability-block__modifier">(+1)</span>
+                    <span class="ability-block__score">{{ page.wis }}</span>
+                    <span class="ability-block__modifier">{{ page.wis_mod }}</span>
                 </div>
             </div>
             <div class="ability-block__stat ability-block__stat--cha">
                 <div class="ability-block__heading">CHA</div>
                 <div class="ability-block__data">
-                    <span class="ability-block__score">6</span>
-                    <span class="ability-block__modifier">(-2)</span>
+                    <span class="ability-block__score">{{ page.cha }}</span>
+                    <span class="ability-block__modifier">{{ page.cha_mod }}</span>
                 </div>
             </div>
         </div>
@@ -238,7 +238,7 @@ layout: default
             <div class="mon-stat-block__tidbit">
                 <span class="mon-stat-block__tidbit-label">Skills</span>
                 <span class="mon-stat-block__tidbit-data">
-                    <a class="tooltip-hover skill-tooltip" href="/compendium/rules/basic-rules/using-ability-scores#Perception" >Perception</a> +3, <a class="tooltip-hover skill-tooltip" href="/compendium/rules/basic-rules/using-ability-scores#Stealth" >Stealth</a> +4
+                    Perception +3, Stealth +4
                 </span>
             </div>
         
