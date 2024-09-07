@@ -1,8 +1,8 @@
 --- 
 layout: default 
 ---
-<div class="post detail-content">
-  <div class="stat-block mon-stat-block">
+<div class="post">
+  <div class="stat-block">
     <hr class="orange-border" />
     <div class="section-left">
       <div class="monster-heading">
@@ -10,28 +10,17 @@ layout: default
         <h2>{{ page.size }}, {{ page.alignment }}</h2>
       </div> <!-- monster heading -->
       <svg height="5" width="100%" class="tapered-rule">
-	      <polyline points="0,0 400,2.5 0,5"></polyline>
+	<polyline points="0,0 400,2.5 0,5"></polyline>
       </svg>
       <div class="top-stats">
-        <div class="property-line first">
-          <h4>Armor Class</h4>
-          <p>{{ page.armor_class }}</p>
-        </div> <!-- property line -->
+	<div class="property-line first">
+	  <h4>Armor Class</h4>
+	  <p>{{ page.armor_class }}</p>
+	</div> <!-- property line -->
 	<div class="property-line">
 	  <h4>Hit Points</h4>
 	  <p contenteditable="true">{{ page.hit_points }}</p>
 	</div> <!-- property line -->
-  <div class="mon-stat-block__attribute">
-    <span class="mon-stat-block__attribute-label">Hit Points</span>
-    <span class="mon-stat-block__attribute-data">
-        <span class="mon-stat-block__attribute-data-value">
-            11
-        </span>
-        <span class="mon-stat-block__attribute-data-extra">
-            (2d8 + 2)
-        </span>      
-    </span>
-  </div>
 	<div class="property-line last">
 	  <h4>Speed</h4>
 	  <p>{{ page.speed }}</p>
@@ -148,6 +137,7 @@ layout: default
 
   <div class="detail-content">
   <div class="mon-stat-block">
+    <hr class="orange-border" />
     <div class="mon-stat-block__header">
       <div class="monster-heading">
         <h1>{{ page.name }}</h1>
@@ -306,6 +296,6 @@ layout: default
         
     </div>
   </div>
-
+  <hr class="orange-border" />
   </div>
 </div>
