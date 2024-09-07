@@ -109,6 +109,7 @@ $statblock-background-color: #FDF1DC;
 .mon-stat-block__stat-block .ability-block {
     color: #822000;
     margin: 0;
+    display: flex;
 }
 .mon-stat-block__attribute {
     margin: 5px 0;
@@ -120,4 +121,5 @@ $statblock-background-color: #FDF1DC;
     padding: 5px 0;
     text-align: center;
     display: flex;
+    font-size: 14px;
 }
