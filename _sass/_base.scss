@@ -206,6 +206,7 @@ pre {
     }
 }
 
+
 .mon-stat-block {
     background-size: 100% auto;
     background-position: top center;
@@ -217,4 +218,12 @@ pre {
     margin: 15px 0;
     font-family: "Scala Sans Offc", Roboto, Helvetica, sans-serif;
     font-size: 15px;
+    column-count: 2;
+}
+
+.mon-stat-block__name {
+    font-weight: bold;
+    font-size: 34px;
+    font-family: MrsEavesSmallCaps, Roboto, Helvetica, sans-serif;
+    color: #822000;
 }
