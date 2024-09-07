@@ -115,3 +115,9 @@ $statblock-background-color: #FDF1DC;
     color: #822000;
     line-height: 1.2;
 }
+.ability-block__stat {
+    width: 16.66667%;
+    padding: 5px 0;
+    text-align: center;
+    display: flex;
+}
