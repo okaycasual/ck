@@ -205,3 +205,16 @@ pre {
         }
     }
 }
+
+.mon-stat-block {
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat, repeat;
+    position: relative;
+    box-shadow: 0 0 5px #979AA4;
+    border: 1px solid #d4d0ce;
+    padding: 15px;
+    margin: 15px 0;
+    font-family: "Scala Sans Offc", Roboto, Helvetica, sans-serif;
+    font-size: 15px;
+}
