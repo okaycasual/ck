@@ -203,8 +203,10 @@ layout: default
             <div class="ability-block__stat ability-block__stat--con">
                 <div class="ability-block__heading">CON</div>
                 <div class="ability-block__data">
-                    <span class="ability-block__score">{{ page.con }}</span>
+                    <span class="ability-block__score">{{ page.con | minus: 10 | divided_by: 2 | floor }}</span>
                     <span class="ability-block__modifier">{{ page.con_mod }}</span>
+                    <span class="ability-block__modifier">{{ page.con | minus: 10 | divided_by: 2 | floor }}</span>
+                    
                 </div>
             </div>
             <div class="ability-block__stat ability-block__stat--int">
