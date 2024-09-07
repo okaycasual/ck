@@ -86,9 +86,32 @@ $statblock-background-color: #FDF1DC;
     column-count: 2;
 }
 
-.mon-stat-block__name {
+.mon-stat-block__name a {
     font-weight: bold;
     font-size: 34px;
     font-family: MrsEavesSmallCaps, Roboto, Helvetica, sans-serif;
     color: #822000;
+    text-decoration: none;
+}
+
+.mon-stat-block__meta {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.mon-stat-block__attribute-label,
+.ability-block__heading {
+    font-weight: bold;
+}
+.ability-block {
+    font-family: "Scala Sans Offc", Roboto, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.mon-stat-block__stat-block .ability-block {
+    color: #822000;
+    margin: 0;
+}
+.mon-stat-block__attribute {
+    margin: 5px 0;
+    color: #822000;
+    line-height: 1.2;
 }
