@@ -235,98 +235,89 @@ layout: default
         </svg>
     </div>
     <div class="mon-stat-block__tidbits">
-            <div class="mon-stat-block__tidbit">
-                <span class="mon-stat-block__tidbit-label">Skills</span>
-                <span class="mon-stat-block__tidbit-data">
-                    {% if page.skill_acrobatics %}
-                    <a class="tooltip-hover skill-tooltip">Acrobatics</a> {{page.skill_acrobatics}}
-                    {% endif %}
-                    {% if page.skill_animal_handling %}
-                    <a class="tooltip-hover skill-tooltip">Animal Handling</a> {{page.skill_animal_handling}}
-                    {% endif %}
-                    {% if page.skill_arcana %}
-                    <a class="tooltip-hover skill-tooltip">Arcana</a> {{page.skill_arcana}}
-                    {% endif %}
-                    {% if page.skill_athletics %}
-                    <a class="tooltip-hover skill-tooltip">Athletics</a> {{page.skill_athletics}}
-                    {% endif %}
-                    {% if page.skill_deception %}
-                    <a class="tooltip-hover skill-tooltip">Deception</a> {{page.skill_deception}}
-                    {% endif %}
-                    {% if page.skill_history %}
-                    <a class="tooltip-hover skill-tooltip">History</a> {{page.skill_history}}
-                    {% endif %}
-                    {% if page.skill_insight %}
-                    <a class="tooltip-hover skill-tooltip">Insight</a> {{page.skill_insight}}
-                    {% endif %}
-                    {% if page.skill_intimidation %}
-                    <a class="tooltip-hover skill-tooltip">Intimidation</a> {{page.skill_intimidation}}
-                    {% endif %}
-                    {% if page.skill_investigation %}
-                    <a class="tooltip-hover skill-tooltip">Investigation</a> {{page.skill_investigation}}
-                    {% endif %}
-                    {% if page.skill_medicine %}
-                    <a class="tooltip-hover skill-tooltip">Medicine</a> {{page.skill_medicine}}
-                    {% endif %}
-                    {% if page.skill_nature %}
-                    <a class="tooltip-hover skill-tooltip">Nature</a> {{page.skill_nature}}
-                    {% endif %}
-                    {% if page.skill_perception %}
-                    <a class="tooltip-hover skill-tooltip">Perception</a> {{page.skill_perception}}
-                    {% endif %}
-                    {% if page.skill_performance %}
-                    <a class="tooltip-hover skill-tooltip">Performance</a> {{page.skill_performance}}
-                    {% endif %}
-                    {% if page.skill_persuasion %}
-                    <a class="tooltip-hover skill-tooltip">Persuasion</a> {{page.skill_persuasion}}
-                    {% endif %}
-                    {% if page.skill_religion %}
-                    <a class="tooltip-hover skill-tooltip">Religion</a> {{page.skill_religion}}
-                    {% endif %}
-                    {% if page.skill_sleight_of_hand %}
-                    <a class="tooltip-hover skill-tooltip">Sleight of Hand</a> {{page.skill_sleight_of_hand}}
-                    {% endif %}
-                    {% if page.skill_stealth %}
-                    <a class="tooltip-hover skill-tooltip">Stealth</a> {{page.skill_stealth}}
-                    {% endif %}
-                    {% if page.skill_survival %}
-                    <a class="tooltip-hover skill-tooltip">Survival</a> {{page.skill_survival}}
-                    {% endif %}
-                </span>
-            </div>
-        
-            <div class="mon-stat-block__tidbit">
-                <span class="mon-stat-block__tidbit-label">Senses</span>
-                <span class="mon-stat-block__tidbit-data">
-                  {{ page.senses }}
-                </span>
-            </div>
-        
-            <div class="mon-stat-block__tidbit">
-                <span class="mon-stat-block__tidbit-label">Languages</span>
-                <span class="mon-stat-block__tidbit-data">
-                  {{ page.languages }}  
-                </span>
-            </div>
-        
-        <div class="mon-stat-block__tidbit-container">
-            <div class="mon-stat-block__tidbit">
-                <span class="mon-stat-block__tidbit-label">Challenge</span>
-                <span class="mon-stat-block__tidbit-data">
-                  {{ page.challenge }}
-                </span>
-            </div>
-            
-                <div class="mon-stat-block__tidbit-spacer"></div>
-                <div class="mon-stat-block__tidbit">
-                    <span class="mon-stat-block__tidbit-label">Proficiency Bonus</span>
-                    <span class="mon-stat-block__tidbit-data">
-                        {{ page.prof_bonus }}
-                    </span>
-                </div>
-            
-        </div>
-        
+      <div class="mon-stat-block__tidbit">
+        {% if page.show_skill %}<span class="mon-stat-block__tidbit-label">Skills</span>{% endif %}
+        <span class="mon-stat-block__tidbit-data">
+          {% if page.skill_acrobatics %}
+            <a class="tooltip-hover skill-tooltip">Acrobatics</a> {{page.skill_acrobatics}}
+          {% endif %}
+          {% if page.skill_animal_handling %}
+            <a class="tooltip-hover skill-tooltip">Animal Handling</a> {{page.skill_animal_handling}}
+          {% endif %}
+          {% if page.skill_arcana %}
+            <a class="tooltip-hover skill-tooltip">Arcana</a> {{page.skill_arcana}}
+          {% endif %}
+          {% if page.skill_athletics %}
+            <a class="tooltip-hover skill-tooltip">Athletics</a> {{page.skill_athletics}}
+          {% endif %}
+          {% if page.skill_deception %}
+            <a class="tooltip-hover skill-tooltip">Deception</a> {{page.skill_deception}}
+          {% endif %}
+          {% if page.skill_history %}
+            <a class="tooltip-hover skill-tooltip">History</a> {{page.skill_history}}
+          {% endif %}
+          {% if page.skill_insight %}
+            <a class="tooltip-hover skill-tooltip">Insight</a> {{page.skill_insight}}
+          {% endif %}
+          {% if page.skill_intimidation %}
+            <a class="tooltip-hover skill-tooltip">Intimidation</a> {{page.skill_intimidation}}
+          {% endif %}
+          {% if page.skill_investigation %}
+            <a class="tooltip-hover skill-tooltip">Investigation</a> {{page.skill_investigation}}
+          {% endif %}
+          {% if page.skill_medicine %}
+            <a class="tooltip-hover skill-tooltip">Medicine</a> {{page.skill_medicine}}
+          {% endif %}
+          {% if page.skill_nature %}
+            <a class="tooltip-hover skill-tooltip">Nature</a> {{page.skill_nature}}
+          {% endif %}
+          {% if page.skill_perception %}
+            <a class="tooltip-hover skill-tooltip">Perception</a> {{page.skill_perception}}
+          {% endif %}
+          {% if page.skill_performance %}
+            <a class="tooltip-hover skill-tooltip">Performance</a> {{page.skill_performance}}
+          {% endif %}
+          {% if page.skill_persuasion %}
+            <a class="tooltip-hover skill-tooltip">Persuasion</a> {{page.skill_persuasion}}
+          {% endif %}
+          {% if page.skill_religion %}
+            <a class="tooltip-hover skill-tooltip">Religion</a> {{page.skill_religion}}
+          {% endif %}
+          {% if page.skill_sleight_of_hand %}
+            <a class="tooltip-hover skill-tooltip">Sleight of Hand</a> {{page.skill_sleight_of_hand}}
+          {% endif %}
+          {% if page.skill_stealth %}
+            <a class="tooltip-hover skill-tooltip">Stealth</a> {{page.skill_stealth}}
+          {% endif %}
+          {% if page.skill_survival %}
+            <a class="tooltip-hover skill-tooltip">Survival</a> {{page.skill_survival}}
+          {% endif %}
+        </span>
+      </div>
+      <div class="mon-stat-block__attribute">
+          <span class="mon-stat-block__attribute-label">Senses</span>
+          <span class="mon-stat-block__attribute-data">
+            {{ page.senses }}
+          </span>
+      </div>
+      <div class="mon-stat-block__attribute">
+          <span class="mon-stat-block__attribute-label">Languages</span>
+          <span class="mon-stat-block__attribute-data">
+            {{ page.languages }}  
+          </span>
+      </div>
+      <div class="mon-stat-block__attribute">
+          <span class="mon-stat-block__attribute-label">Challenge</span>
+          <span class="mon-stat-block__attribute-data">
+            {{ page.challenge }}
+          </span>
+      </div>
+      <div class="mon-stat-block__attribute">
+          <span class="mon-stat-block__attribute-label">Proficiency Bonus</span>
+          <span class="mon-stat-block__attribute-data">
+              {{ page.prof_bonus }}
+          </span>
+      </div>
     </div>
     <svg height="5" width="100%" class="tapered-rule">
       <polyline points="0,0 400,2.5 0,5"></polyline>
