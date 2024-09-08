@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% assign all_monsters = site.monsters | sort: 'name' %}
+<div class="home">
+  <h1 class="page-heading">Creat An Encounter</h1>
+  <div id="monsterSearch">Add Monster to Encounter: 
+    <select name="pets" id="pet-select">
+      {% for monster in all_monsters %}
+        <option value="{{ monster.name }}">{{ monster.name }}</option>
+      {% endfor %}
+    </select>
+    <button>Add</button>
+  </div>
+</div>
