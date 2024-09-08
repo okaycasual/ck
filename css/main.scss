@@ -79,7 +79,6 @@ $statblock-background-color: #FDF1DC;
     position: relative;
     box-shadow: 0 0 5px #979AA4;
     border: 1px solid #d4d0ce;
-    padding: 15px;
     margin: 15px 0;
     font-family: "Scala Sans Offc", Roboto, Helvetica, sans-serif;
     font-size: 15px;
@@ -87,6 +86,7 @@ $statblock-background-color: #FDF1DC;
 }
 
 .mon-stat-block-inner {
+    padding: 15px;
     column-count: 2;
 }
 
