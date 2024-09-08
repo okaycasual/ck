@@ -311,9 +311,9 @@ layout: default
               <p>
                 <strong>{{ page.action2_name }}</strong>
                 <span>{{ page.action2_desc }}</em>
-                <em>Attack:</em> <span data-dicenotation="{{ page.action2_attack }}" data-rolltype="to hit" data-rollaction="Bite">+4</span></em>
-                <em>Damage:</em> <span data-dicenotation="2d4+2" data-rolltype="damage" data-rollaction="Bite" data-rolldamagetype="piercing">(2d4 + 2)</span> piercing damage.
-                <div> If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.</div>
+                <em>Attack:</em> <span data-dicenotation="{{ page.action2_attack }}" data-rolltype="to hit" data-rollaction="Bite">{{ page.action2_attack }}</span></em>
+                <em>Damage:</em> <span data-dicenotation="{{ page.action2_dmg1_value }}" data-rolltype="damage" data-rollaction="Bite" data-rolldamagetype="piercing">({{ page.action2_dmg1_value }})</span> {{ page.action2_dmg1_type }}
+                <div>{{ page.action2_desc2 }}</div>
               </p>                            
           </div>
         </div>

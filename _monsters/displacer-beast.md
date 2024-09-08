@@ -30,8 +30,10 @@ action2_desc: 'Melee Weapon Attack: reach 10 ft., one target.'
 action2_attack: 1d20+4
 action2_dmg1_value: 2d4+2
 action2_dmg1_type: piercing damage.
+action2_desc2: If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.
 ---
 
 ***Avoidance.*** If the displacer beast is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails .
+
 
 ***Displacement.*** The displacer beast projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the displacer beast is incapacitated or has a speed of 0.
