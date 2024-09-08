@@ -22,6 +22,7 @@ speed: "40 ft."
 hit_points: "85"
 hit_points_roll: "(2d8 + 2)"
 armor_class: 13 (natural armor)
+prof_bonus: '+2'
 ---
 
 ***Avoidance.*** If the displacer beast is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails .

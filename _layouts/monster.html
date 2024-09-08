@@ -203,9 +203,8 @@ layout: default
             <div class="ability-block__stat ability-block__stat--con">
                 <div class="ability-block__heading">CON</div>
                 <div class="ability-block__data">
-                    <span class="ability-block__score">{{ page.con | minus: 10 | divided_by: 2 | floor }}</span>
+                    <span class="ability-block__score">{{ page.con }}</span>
                     <span class="ability-block__modifier">{{ page.con_mod }}</span>
-                    <span class="ability-block__modifier">{{ page.con | minus: 10 | divided_by: 2 | floor }}</span>
                     
                 </div>
             </div>
@@ -236,26 +235,41 @@ layout: default
         </svg>
     </div>
     <div class="mon-stat-block__tidbits">
-        
             <div class="mon-stat-block__tidbit">
                 <span class="mon-stat-block__tidbit-label">Skills</span>
                 <span class="mon-stat-block__tidbit-data">
-                    <a class="tooltip-hover skill-tooltip">Perception</a> +3
-                    <a class="tooltip-hover skill-tooltip">Stealth</a> +4
+                    <a class="tooltip-hover skill-tooltip">Acrobatics</a> {{page.skill_acrobatics}}
+                    <a class="tooltip-hover skill-tooltip">Animal Handling</a> {{page.skill_animal_handling}}
+                    <a class="tooltip-hover skill-tooltip">Arcana</a> {{page.skill_arcana}}
+                    <a class="tooltip-hover skill-tooltip">Athletics</a> {{page.skill_athletics}}
+                    <a class="tooltip-hover skill-tooltip">Deception</a> {{page.skill_deception}}
+                    <a class="tooltip-hover skill-tooltip">History</a> {{page.skill_history}}
+                    <a class="tooltip-hover skill-tooltip">Insight</a> {{page.skill_insight}}
+                    <a class="tooltip-hover skill-tooltip">Intimidation</a> {{page.skill_intimidation}}
+                    <a class="tooltip-hover skill-tooltip">Investigation</a> {{page.skill_investigation}}
+                    <a class="tooltip-hover skill-tooltip">Medicine</a> {{page.skill_medicine}}
+                    <a class="tooltip-hover skill-tooltip">Nature</a> {{page.skill_nature}}
+                    <a class="tooltip-hover skill-tooltip">Perception</a> {{page.skill_perception}}
+                    <a class="tooltip-hover skill-tooltip">Performance</a> {{page.skill_performance}}
+                    <a class="tooltip-hover skill-tooltip">Persuasion</a> {{page.skill_persuasion}}
+                    <a class="tooltip-hover skill-tooltip">Religion</a> {{page.skill_religion}}
+                    <a class="tooltip-hover skill-tooltip">Sleight of Hand</a> {{page.skill_sleight_of_hand}}
+                    <a class="tooltip-hover skill-tooltip">Stealth</a> {{page.skill_stealth}}
+                    <a class="tooltip-hover skill-tooltip">Survival</a> {{page.skill_survival}}
                 </span>
             </div>
         
             <div class="mon-stat-block__tidbit">
                 <span class="mon-stat-block__tidbit-label">Senses</span>
                 <span class="mon-stat-block__tidbit-data">
-                     Passive Perception 13
+                  {{ page.senses }}
                 </span>
             </div>
         
             <div class="mon-stat-block__tidbit">
                 <span class="mon-stat-block__tidbit-label">Languages</span>
                 <span class="mon-stat-block__tidbit-data">
-                      --  
+                  {{ page.languages }}  
                 </span>
             </div>
         
@@ -263,7 +277,7 @@ layout: default
             <div class="mon-stat-block__tidbit">
                 <span class="mon-stat-block__tidbit-label">Challenge</span>
                 <span class="mon-stat-block__tidbit-data">
-                    1/4 (50 XP)
+                  {{ page.challenge }}
                 </span>
             </div>
             
@@ -271,7 +285,7 @@ layout: default
                 <div class="mon-stat-block__tidbit">
                     <span class="mon-stat-block__tidbit-label">Proficiency Bonus</span>
                     <span class="mon-stat-block__tidbit-data">
-                        +2
+                        {{ page.prof_bonus }}
                     </span>
                 </div>
             
@@ -282,20 +296,27 @@ layout: default
       <polyline points="0,0 400,2.5 0,5"></polyline>
     </svg>
     <div class="mon-stat-block__description-blocks">
-        
-            <div class="mon-stat-block__description-block"> 
-                <div class="mon-stat-block__description-block-content">
-                    <p><em><strong>Keen Hearing and Smell.</strong></em> The wolf has advantage on Wisdom (<a class="tooltip-hover skill-tooltip" href="/compendium/rules/basic-rules/using-ability-scores#Perception" >Perception</a>) checks that rely on hearing or smell.</p>
-<p><em><strong>Pack Tactics.</strong></em> The wolf has advantage on attack rolls against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn’t <a class="tooltip-hover condition-tooltip" href="/sources/dnd/free-rules/rules-glossary#IncapacitatedCondition" >incapacitated</a>.</p>                
-                </div>
-            </div>
-         
-            <div class="mon-stat-block__description-block">
-                <div class="mon-stat-block__description-block-heading">Actions</div>
-                <div class="mon-stat-block__description-block-content">
-                    <p><em><strong>Bite.</strong> Melee Weapon Attack:</em> <span data-dicenotation="1d20+4" data-rolltype="to hit" data-rollaction="Bite">+4</span> to hit, reach 5 ft., one target. <em>Hit:</em> 7 <span data-dicenotation="2d4+2" data-rolltype="damage" data-rollaction="Bite" data-rolldamagetype="piercing">(2d4 + 2)</span> piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked <a class="tooltip-hover condition-tooltip" href="/sources/dnd/free-rules/rules-glossary#ProneCondition" >prone</a>.</p>                            
-                </div>
-            </div>
+        <div class="mon-stat-block__description-block"> 
+          <div class="mon-stat-block__description-block-content">
+            {{ content }}              
+          </div>
+        </div>
+        <div class="mon-stat-block__description-block">
+          <div class="mon-stat-block__description-block-heading">Actions</div>
+          <div class="mon-stat-block__description-block-content">
+              <p>
+                <strong>Multiattack.</strong>
+                <em>The displacer beast makes two attacks with its tentacles.</em>
+              </p>
+              <p>
+                <strong>Tentacle.</strong>
+                <em>Melee Weapon Attack: reach 10 ft., one target.</em>
+                <em>Attack:</em> <span data-dicenotation="1d20+4" data-rolltype="to hit" data-rollaction="Bite">+4</span></em>
+                <em>Damage:</em> <span data-dicenotation="2d4+2" data-rolltype="damage" data-rollaction="Bite" data-rolldamagetype="piercing">(2d4 + 2)</span> piercing damage
+                <span> If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.</span>
+              </p>                            
+          </div>
+        </div>
         
     </div>
   </div>
