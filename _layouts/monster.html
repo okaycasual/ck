@@ -305,15 +305,15 @@ layout: default
           <div class="mon-stat-block__description-block-heading">Actions</div>
           <div class="mon-stat-block__description-block-content">
               <p>
-                <strong>Multiattack.</strong>
-                <em>The displacer beast makes two attacks with its tentacles.</em>
+                <strong>{{ page.action1_name }}</strong>
+                <span>{{ page.action1_desc }}</span>
               </p>
               <p>
-                <strong>Tentacle.</strong>
-                <em>Melee Weapon Attack: reach 10 ft., one target.</em>
-                <em>Attack:</em> <span data-dicenotation="1d20+4" data-rolltype="to hit" data-rollaction="Bite">+4</span></em>
-                <em>Damage:</em> <span data-dicenotation="2d4+2" data-rolltype="damage" data-rollaction="Bite" data-rolldamagetype="piercing">(2d4 + 2)</span> piercing damage
-                <span> If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.</span>
+                <strong>{{ page.action2_name }}</strong>
+                <span>{{ page.action2_desc }}</em>
+                <em>Attack:</em> <span data-dicenotation="{{ page.action2_attack }}" data-rolltype="to hit" data-rollaction="Bite">+4</span></em>
+                <em>Damage:</em> <span data-dicenotation="2d4+2" data-rolltype="damage" data-rollaction="Bite" data-rolldamagetype="piercing">(2d4 + 2)</span> piercing damage.
+                <div> If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.</div>
               </p>                            
           </div>
         </div>
