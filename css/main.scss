@@ -83,8 +83,11 @@ $statblock-background-color: #FDF1DC;
     margin: 15px 0;
     font-family: "Scala Sans Offc", Roboto, Helvetica, sans-serif;
     font-size: 15px;
-    column-count: 2;
     background: #FDF1DC;
+}
+
+.mon-stat-block-inner {
+    column-count: 2;
 }
 
 .mon-stat-block__name a {
