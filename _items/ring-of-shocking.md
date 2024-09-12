@@ -1,6 +1,6 @@
 ---
 layout: item
-name: "Ring of Sweet Delight"
+name: "Ring of Shocking"
 item_type: "wondrous item"
 item_rarity: "Uncommon"
 weight: "10"
